@@ -1,4 +1,4 @@
-package com.giea.model;
+package com.giea.model.people;
 
 public class Employee extends Person {
 }
