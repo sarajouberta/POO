@@ -1,4 +1,4 @@
-package com.giea.model.projects;
+package com.giea.model.projects.architecture;
 
 public class NotResidentialProject extends ArchitecturalProject{
     private float buildingArea; // Superficie del edificio.

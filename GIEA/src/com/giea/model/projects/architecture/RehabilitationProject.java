@@ -1,4 +1,4 @@
-package com.giea.model.projects;
+package com.giea.model.projects.architecture;
 
 public class RehabilitationProject extends ArchitecturalProject{
     private float remodelArea; // Superficie a reformar.
