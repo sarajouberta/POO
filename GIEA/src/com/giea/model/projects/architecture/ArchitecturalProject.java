@@ -1,5 +1,6 @@
 package com.giea.model.projects.architecture;
 
+import com.giea.model.constructions.Construction;
 import com.giea.model.people.Accountant;
 import com.giea.model.people.Architect;
 import com.giea.model.people.BuildingEngineer;
@@ -15,15 +16,12 @@ import java.util.Calendar;
 import java.util.Date;
 
 public class ArchitecturalProject extends Project {
-    private LocalDate startProjectDate; // Fecha de comienzo del proyecto.
-    private LocalDate endProjectDate; // Fecha de finalización del proyecto.
-    private long expectedDays; // Duración prevista del proyecto.
-    private long budget; //Presupuesto. Relación con el contable asociado.
-    private String address; //Dirección del proyecto asociado.
-
-
-    private BuildingEngineer buildingEngineer;
-    private Accountant accountant;
+    protected LocalDate startProjectDate; // Fecha de comienzo del proyecto.
+    protected LocalDate endProjectDate; // Fecha de finalización del proyecto.
+    protected long expectedDays; // Duración prevista del proyecto.
+    protected long budget; //Presupuesto. Relación con el contable asociado.
+    protected BuildingEngineer buildingEngineer;
+    protected Accountant accountant;
 
 
 
@@ -77,11 +75,4 @@ public class ArchitecturalProject extends Project {
         this.budget = budget;
     }
 
-    public String getAddress() {
-        return address;
-    }
-
-    public void setAddress(String address) {
-        this.address = address;
-    }
 }

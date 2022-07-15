@@ -4,7 +4,7 @@ import java.time.LocalDate;
 
 public class TechnicalInspectionCertificate extends Certificate{
     public static final int EXPIRATION_YEARS = 45;
-    private boolean expired = false;
+    protected boolean expired = false;
 
 
     public boolean isExpired(){

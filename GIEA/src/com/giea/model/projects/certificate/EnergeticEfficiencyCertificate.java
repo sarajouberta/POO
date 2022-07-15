@@ -8,7 +8,22 @@ public class EnergeticEfficiencyCertificate extends Certificate{
     public enum EnergeticCategory{
         A,B,C,D,E,F,G
     }
-    private EnergeticCategory category;
-    private BuildingEngineer buildingEngineer;
+    protected EnergeticCategory category;
+    protected BuildingEngineer buildingEngineer;
 
+    public EnergeticCategory getCategory() {
+        return category;
+    }
+
+    public void setCategory(EnergeticCategory category) {
+        this.category = category;
+    }
+
+    public BuildingEngineer getBuildingEngineer() {
+        return buildingEngineer;
+    }
+
+    public void setBuildingEngineer(BuildingEngineer buildingEngineer) {
+        this.buildingEngineer = buildingEngineer;
+    }
 }

@@ -1,18 +1,18 @@
 package com.giea.model.projects;
 
+import com.giea.model.constructions.Construction;
 import com.giea.model.people.Architect;
 import com.giea.model.people.Client;
 
 import java.time.LocalDate;
 
 public class Project {
-    //private Date requestDate;
     protected LocalDate requestDate; //Fecha de petición del proyecto. I
     protected LocalDate deliveryDate; // Fecha de entrega al cliente del proyecto.
     //añado las relaciones de empleados con los proyectos,a ver
     protected Client client;
     protected Architect architect;
-
+    protected Construction construction;
     public Client getClient() {
         return client;
     }
@@ -43,5 +43,13 @@ public class Project {
 
     public void setDeliveryDate(LocalDate deliveryDate) {
         this.deliveryDate = deliveryDate;
+    }
+
+    public Construction getConstruction() {
+        return construction;
+    }
+
+    public void setConstruction(Construction construction) {
+        this.construction = construction;
     }
 }
