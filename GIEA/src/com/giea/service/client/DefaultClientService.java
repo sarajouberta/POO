@@ -8,7 +8,6 @@ public class DefaultClientService implements ClientService {
 
     private ClientDao clientDao = DefaultClientDao.getInstance();
 
-
     public void createClient(String name, String surname, int id){
         Client client = new Client();
         client.setName(name);

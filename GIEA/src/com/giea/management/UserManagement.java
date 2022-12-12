@@ -8,9 +8,6 @@ import java.util.List;
 
 public interface UserManagement {
 
-    private List<Client> clients;
-    private List<Employee> employees;
-
     public void newClient(Client client);
     public void signOutClient(Client client);
     public void newEmployee(Employee employee);
